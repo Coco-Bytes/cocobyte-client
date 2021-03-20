@@ -11,6 +11,7 @@ import Header from './components/header/header';
 import Footer from './components/footer/footer';
 import Dashboard from './components/dashboard/dashboard';
 import Helpsearch from './components/searchpage/helpsearch';
+import Helpdash from './components/helpdash/helpdash';
 
 if(process.env.NODE_ENV=="development"){
   require('dotenv').config()
@@ -25,6 +26,7 @@ ReactDOM.render(
           <Route exact path='/' component = {App}/>
           <Route exact path='/userdashboard' component = {Dashboard}/>
           <Route exact path='/userdashboard/search' component = {Helpsearch}/>
+          <Route exact path='/helperdash' component = {Helpdash}/>
           {/* <Route component={App} /> */}
         </Switch>
         <Footer/>

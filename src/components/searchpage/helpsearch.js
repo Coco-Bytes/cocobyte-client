@@ -68,8 +68,6 @@ function Helpsearch() {
   const [success, setSuccess] = React.useState(false);
   const timer = React.useRef();
 
-  var durationarr = ["minutes", "hours"];
-
   const buttonClassname = clsx({
     [classes.buttonSuccess]: success,
   });
