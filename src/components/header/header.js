@@ -10,13 +10,11 @@ import {Link} from 'react-router-dom';
 export default function Header(){
   const [dashtext, setDash] = useState("Login/SignUp");
 
-  if(dashtext=="Login/SignUp"){
-    if(window.location.pathname.substring(1)!=""){
-      if(window.location.pathname=="userdashboard"){
-        setDash("User Dashboard");
-      }else if (window.location.pathname=="helperdash") {
-        setDash("Helper Dashboard");
-      }
+  if(window.location.pathname.substring(1)!=""){
+    if(window.location.pathname.includes('userdashboard') && dashtext!="User Dashboard"){
+      setDash("User Dashboard");
+    }else if (window.location.pathname.includes('helperdash') && dashtext!="Helper Dashboard") {
+      setDash("Helper Dashboard");
     }
   }
 
