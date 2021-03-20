@@ -8,55 +8,36 @@ import MenuItem from '@material-ui/core/MenuItem';
 import {Link} from 'react-router-dom';
 
 export default function Header(){
-  const [anchorEl, setAnchorEl] = useState(null);
+  const [dashtext, setDash] = useState("Login/SignUp");
 
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
+  if(dashtext=="Login/SignUp"){
+    if(window.location.pathname.substring(1)!=""){
+      if(window.location.pathname=="userdashboard"){
+        setDash("User Dashboard");
+      }else if (window.location.pathname=="helperdash") {
+        setDash("Helper Dashboard");
+      }
+    }
+  }
 
   return (
     <div className="header">
       <div className="headerContainer">
         <div className="logo">
           <span>
-            <Link to="/">Blue Edge</Link>
+            <Link to="/">Coco Byte</Link>
           </span>
         </div>
         <div className="headNav">
           <div className="navList">
             <span>
-              <Link to="/">Home</Link>
+              <Link to="/">{dashtext}</Link>
             </span>
             <span>
-              <Link to="/unescape">Unescape</Link>
-            </span>
-            <span>
-              <a href="https://github.com/blueedgetechno" target="_blank" rel="noreferrer">Github</a>
+              <a href="https://github.com/Coco-Bytes/cocobyte-client" target="_blank" rel="noreferrer">Github</a>
             </span>
             <span><a href="mailto:blueedgetechno@gmail.com" target="_blank" rel="noreferrer">Contact</a></span>
           </div>
-          <div className="sideBar">
-            <DehazeIcon className="sideIcon" onClick={handleClick}/>
-          </div>
-          <Menu
-            id="simple-menu"
-            className="sideMenu"
-            anchorEl={anchorEl}
-            keepMounted
-            open={Boolean(anchorEl)}
-            onClose={handleClose}
-          >
-            <MenuItem><Link to="/">Home</Link></MenuItem>
-            <MenuItem><Link to="/unescape">Unescape</Link></MenuItem>
-            <MenuItem>
-              <a href="https://github.com/blueedgetechno">Github</a>
-            </MenuItem>
-            <MenuItem><a href="mailto:blueedgetechno@gmail.com">Contact</a></MenuItem>
-          </Menu>
         </div>
       </div>
     </div>

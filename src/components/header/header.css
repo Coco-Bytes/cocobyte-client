@@ -25,7 +25,7 @@
   font-size: 1.4em;
   /* height: 25px; */
   height: auto;
-  color: #f9f4f4;
+  color: #2f2d2d;
 }
 
 a {
@@ -44,9 +44,9 @@ a:visited {
 }
 
 .navList span {
-  font-size: 1.2em;
+  font-size: 1em;
   margin: auto 40px;
-  color: #f9f4f4;
+  color: #242424;
 }
 
 .sideBar {
