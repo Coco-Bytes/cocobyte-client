@@ -23,7 +23,7 @@ export default function Header(){
       <div className="headerContainer">
         <div className="logo">
           <span>
-            <Link to="/">Coco Byte</Link>
+            <Link to="/">Uber Hands</Link>
           </span>
         </div>
         <div className="headNav">
