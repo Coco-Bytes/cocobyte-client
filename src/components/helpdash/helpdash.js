@@ -193,7 +193,7 @@ function Helpdash() {
                   <div className="infocont my-4">
                     <div className="text-base font-bold text-gray-800 mb-2">{job.title}</div>
                     <div className="text-sm font-semibold text-gray-600">
-                      <span>{job.distance}</span> • <span className="text-purple-600">staring in {job.startsIn} min</span>
+                      <span>{job.distance}</span> • <span className="text-purple-600">starting in {job.startsIn} min</span>
                     </div>
                   </div>
                   <div className="moreinfo flex mb-4">
