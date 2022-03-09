@@ -32,9 +32,9 @@ export default function Header(){
               <Link to="/">{dashtext}</Link>
             </span>
             <span>
-              <target="_blank" rel="noreferrer">Github</a>
+              <a target="_blank" rel="noreferrer">Github</a>
             </span>
-            <span><a href="mailto:blueedgetechno@gmail.com" target="_blank" rel="noreferrer">Contact</a></span>
+            <span><a href="mailto:sujalmodanwal9@gmail.com" target="_blank" rel="noreferrer">Contact</a></span>
           </div>
         </div>
       </div>
