@@ -32,7 +32,7 @@ export default function Header(){
               <Link to="/">{dashtext}</Link>
             </span>
             <span>
-              <a href="https://github.com/Coco-Bytes/cocobyte-client" target="_blank" rel="noreferrer">Github</a>
+              <target="_blank" rel="noreferrer">Github</a>
             </span>
             <span><a href="mailto:blueedgetechno@gmail.com" target="_blank" rel="noreferrer">Contact</a></span>
           </div>
