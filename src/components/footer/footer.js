@@ -17,10 +17,10 @@ export default function Footer(){
           Copyright © 2022. Uber Hands. All rights reserved
         </span>
         <div className="socialinks">
-          <a href="https://github.com/Coco-Bytes/cocobyte-client" target="_blank">
+          <a target="_blank">
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a href="mailto:blueedgetechno@gmail.com" target="_blank">
+          <a href="mailto:sujalmodanwal9@gmail.com" target="_blank">
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
         </div>
